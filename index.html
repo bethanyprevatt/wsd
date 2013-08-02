@@ -11,13 +11,13 @@
 	<div id="wrapper">
 	<header>
 	    <section>
-        	<h1 id="main">CrossFit</h1>
+        	<h1 id="top">CrossFit</h1>
         	<div id=kettlebell_container><img src="images/kettlebell.jpg" alt="kettlebell image"></div>
        </section>	
     </header>
        <nav>
         	<ul class="navlist">
-        	<li><a href="#main">Home</a></li>
+        	<li><a href="#wrapper">Home</a></li>
         	<li><a href="#whatis">What is CrossFit?</a></li>
         	<li><a href="#boxrules">Rules of the box</a></li>
         	<li><a href="#membership">Membership</a></li>
@@ -37,20 +37,21 @@
             	<li>You'll love the new changes to your body and health</li>
             	<li>You'll gain a new social network</li>
             	</ol>
-            	<br><a href="#membership" class="button">Membership Rates</a><br>
+            	<br><a href="#membership" class="buttonmain">Membership Rates</a><br>
             	   	
 			</article>
 			
-        <p><a href="#main" id="toplink">Back to Top</a></p>
+        <p><a href="#wrapper">Back to Top</a></p>
         
         <aside>
         	<h2 id="boxrules">Rules of the Box</h2>
-        	<div id=boxrules_container"><img src="images/boxrules.jpg" alt="Photo of Crossfit Box Rules" id="rules"></div>
+        	<div id="boxrules_container"><img src="images/boxrules.jpg" alt="Photo of Crossfit Box Rules" id="rules"></div>
             <br><br>
-        <p><a href="#main" id="toplink">Back to Top</a></p>
+        <p><a href="#wrapper">Back to Top</a></p>
 		</aside>
         
-        <h2>Gallery</h3>
+        <h2>Gallery</h2>
+        <div class="gallery_container">
         	
             <ul class="gallerylist">
             <li class="gallerylist"><a href="images/wallballs.jpg"><img src="images/wallballs.jpg" height="100" width="100" alt="Photo of Wall Balls"></a></li>
@@ -59,15 +60,79 @@
             <li class="gallerylist"><a href="images/kettlebells.jpg"><img src="images/kettlebells.jpg" height="100" width="100" alt="Photo of Kettle Bells"></a></li>
             </ul>
 		</div>
-        <div class="membership">
+		</div>
+    <div class="membership">
+        
+        <div class="membership_container">
         <h3 id="membership">Membership Plans</h3>
+        <p></p>
+        	<table>
+        		<tr>
+        			<th>2x a Week</th>
+        			<th>4x a Week</th>
+        			<th>Drop-in</th>
+        		</tr>
+        		<tr>
+        			<td>$50 a month</td>
+        			<td>$100 a month</td>
+        			<td>$8 per class</td>
+        		</tr>
+        	</table>
+        </div>
+        <br/>
+        
+<div class="form_container">
+   
+    <form id="contactform" method="post" action="mailto:example@example.com">
+		<h3>Contact Form</h3>
+	
+	<div>
+	    <label>First Name
+	      <input class="input" type="text" name="first_name" id="first_name">
+        </label>
+	</div>
+	
+	<div>
+	    <label>
+	      Last Name
+	      <input class="input" type="text" name="last_name" id="last_name">
+        </label>
+	</div>
+	
+	<div>
+	    <label>Email Address
+	      <input class="input" type="text" name="email" id="email">
+        </label>
+        </div>
+	
+	<div>
+	    <label>Information
+	      <select class="input" name="information" id="information">
+	        <option>Membership Details</option>
+	        <option>General Information</option>
+	        <option>Comments</option>
+          </select>
+        </label>
+	</div>
+	
+	<div>
+	    <label>Comments
+	      <textarea class="input" name="comments" cols="30" rows="5" id="comments"></textarea>
+        </label>
+	</div>
+	
+	<div>
+		<input class="button" type="submit" value="Send"/>
+	</div>
+	
+	</form>
+</div>
+	<div class="top">
+	<p><a href="#wrapper">Back to Top</a></p>
+	</div>
+	</div>
 
-            $50 a month / twice a week<br>
-            $100 a month / four times a week<br>
-            $8 Drop in Fee
-            
-        <p><a href="#main" id="toplink">Back to Top</a></p>
-    	</div>
+
         <footer>MySite Copyright &copy; 2013
         </footer>
         </div><!--end wrapper-->
